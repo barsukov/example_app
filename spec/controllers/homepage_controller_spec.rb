@@ -2,7 +2,9 @@ require 'spec_helper'
 require 'rails_helper'
 
 describe HomepageController do 
-
+  before do
+    controller.request.for_scrivito_obj
+  end
  describe "GET index" do
  	context "succesful authenticate" do 
  	  it 'responds with 200'do 
