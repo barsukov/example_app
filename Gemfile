@@ -18,7 +18,7 @@ gem 'scrivito_editors', '~> 0.30.0'
 group :development, :test do
   gem 'spring'
   gem 'pry-rails'
-  gem 'dotenv-rails'
   gem 'rspec-rails'
 end
 
+gem 'dotenv-rails'

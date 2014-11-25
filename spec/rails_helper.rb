@@ -7,4 +7,8 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
+  config.include ControllerHelper , :type => :controller
+  config.before(:each, :type => :controller) do
+    initialize_scrivito_http_header
+  end
 end
