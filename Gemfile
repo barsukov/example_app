@@ -15,10 +15,15 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'scrivito', '0.30.0'
 gem 'scrivito_editors', '~> 0.30.0'
 
+
+gem 'devise'
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   gem 'spring'
   gem 'pry-rails'
-  gem 'dotenv-rails'
   gem 'rspec-rails'
 end
+
+gem 'dotenv-rails'
 
