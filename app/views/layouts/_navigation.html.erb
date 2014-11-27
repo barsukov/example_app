@@ -11,8 +11,14 @@
         <% list.tag :li  do %>
           <%= link_to sanitize(obj.menu_title), scrivito_path(obj) %>
         <% end %>
-      <% end %>
 
+    
+      <% end %>
+    
+      <div class="navbar-form navbar-right">
+        <%= render 'devise/shared/login_menu' %>
+      </div>
+     
       <%= form_tag scrivito_path(homepage.search_result_page), method: :get,
         class: 'navbar-form navbar-right', role: 'search' do %>
         <div class="form-group">

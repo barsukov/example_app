@@ -14,9 +14,9 @@ gem 'bootstrap-sass', '~> 3.2.0'
 # Scrivito Gems
 gem 'scrivito', '0.30.0'
 gem 'scrivito_editors', '~> 0.30.0'
+gem "rails_config"
 
-
-gem 'devise'
+gem 'devise', '~> 3.2'
 gem 'rails_12factor', group: :production
 
 group :development, :test do
@@ -24,6 +24,5 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
 end
-
 gem 'dotenv-rails'
 
