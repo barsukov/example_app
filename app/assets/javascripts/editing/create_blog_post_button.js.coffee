@@ -21,15 +21,14 @@ jQuery ->
         $(this).attr('disabled', true)
 
         prefixPath = $('#blog').attr('data-path')
-        now = moment().utc()
-        year = now.year()
-        isoDate = now.format('YYYYMMDDHHmmss')
+        now = new Date()
+        path = now.toISOString().replace(/[^0-9]/g, '')
 
         scrivito
           .create_obj(
             _obj_class: 'BlogPost'
-            _path: "#{prefixPath}/#{isoDate}"
-            published_at: isoDate
+            _path: "#{prefixPath}/#{path}"
+            published_at: now
           ).done (data) ->
             window.location.href = "/#{data.id}"
 

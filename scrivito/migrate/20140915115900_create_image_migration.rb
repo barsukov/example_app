@@ -1,4 +1,4 @@
-class CreateImage < ::Scrivito::Migration
+class CreateImageMigration < ::Scrivito::Migration
   def up
     Scrivito::ObjClass.create(
       name: 'Image',

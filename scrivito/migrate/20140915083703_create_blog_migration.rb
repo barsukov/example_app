@@ -1,4 +1,4 @@
-class CreateBlog < ::Scrivito::Migration
+class CreateBlogMigration < ::Scrivito::Migration
   def up
     Scrivito::ObjClass.create(
       name: 'Blog',

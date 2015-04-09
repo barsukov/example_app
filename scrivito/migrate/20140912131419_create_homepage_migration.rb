@@ -1,4 +1,4 @@
-class CreateHomepage < ::Scrivito::Migration
+class CreateHomepageMigration < ::Scrivito::Migration
   def up
     Scrivito::ObjClass.create(
       name: 'Homepage',

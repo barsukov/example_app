@@ -1,4 +1,4 @@
-class CreateTwoColumnWidget < ::Scrivito::Migration
+class CreateTwoColumnWidgetMigration < ::Scrivito::Migration
   def up
     Scrivito::ObjClass.create(
       name: 'TwoColumnWidget',

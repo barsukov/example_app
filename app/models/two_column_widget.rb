@@ -1,4 +1,8 @@
 class TwoColumnWidget < Widget
+  attribute :column1_content, :widgetlist
+  attribute :column1_width, :string
+  attribute :column2_content, :widgetlist
+
   GRID_SIZE=12
 
   def column2_width

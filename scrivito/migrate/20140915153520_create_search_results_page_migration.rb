@@ -1,4 +1,4 @@
-class CreateSearchResultsPage < ::Scrivito::Migration
+class CreateSearchResultsPageMigration < ::Scrivito::Migration
   def up
     Scrivito::ObjClass.create(
       name: 'SearchResultsPage',

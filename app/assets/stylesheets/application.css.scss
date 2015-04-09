@@ -1,8 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "scrivito";
-@import "scrivito_editors";
-@import "scrivito_content_browser";
 
 .image-widget { max-width: 100% }
 
@@ -31,5 +29,16 @@ html, body {
 }
 
 .scrivito_editing_active .edit-inline { display: inline-block; }
+
+.scrivito_editing_active .image-replace-dropzone {
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px dashed #666;
+  color: #666;
+}
+
+.scrivito_dialog img { max-width: 100%; }
 
 i.icon.glyphicon { font-size: 65px; }

@@ -11,10 +11,6 @@ module ApplicationHelper
     date.try(:strftime, '%b %d, %Y')
   end
 
-  def editing_icon(html_class)
-    content_tag(:i, '', class: "icon glyphicon glyphicon-#{html_class}")
-  end
-
   private
 
   def date_attributes
